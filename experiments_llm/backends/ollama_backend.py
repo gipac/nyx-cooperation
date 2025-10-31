@@ -90,6 +90,8 @@ class OllamaBackend(BaseLLMBackend):
             full_prompt = f"{system_prompt}\n\n{prompt}"
 
         # Prepare request payload
+        # Add random seed to prevent any caching
+        import random
         payload = {
             "model": self.model_name,
             "prompt": full_prompt,
@@ -97,6 +99,8 @@ class OllamaBackend(BaseLLMBackend):
             "options": {
                 "temperature": kwargs.get('temperature', self.temperature),
                 "num_predict": kwargs.get('max_tokens', self.max_tokens),
+                "seed": random.randint(1, 1000000),  # Force unique inference each time
+                "num_ctx": 512,  # Small context to prevent cache reuse
             }
         }
 
