@@ -88,12 +88,17 @@ class HuggingFaceBackend(BaseLLMBackend):
             )
 
             # Create pipeline for easier generation
-            self.pipeline = pipeline(
-                "text-generation",
-                model=self.model,
-                tokenizer=self.tokenizer,
-                device=0 if self.device == 'cuda' else -1
-            )
+            # Don't specify device if using device_map (accelerate handles it)
+            pipeline_kwargs = {
+                "model": self.model,
+                "tokenizer": self.tokenizer,
+            }
+
+            # Only specify device if NOT using device_map
+            if 'device_map' not in load_kwargs:
+                pipeline_kwargs['device'] = 0 if self.device == 'cuda' else -1
+
+            self.pipeline = pipeline("text-generation", **pipeline_kwargs)
 
             logger.info(f"✅ Model loaded on {self.device}")
 
