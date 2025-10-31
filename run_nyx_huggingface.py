@@ -155,8 +155,8 @@ def main():
                        help="HuggingFace model name")
     parser.add_argument("--model-path",
                        help="Local model path (e.g., D:/NYX_PROJECT/models/mistral-7b)")
-    parser.add_argument("--device", default="auto", choices=["auto", "cuda", "cpu"],
-                       help="Device to use")
+    parser.add_argument("--device", default="cpu", choices=["auto", "cuda", "cpu"],
+                       help="Device to use (default: cpu for compatibility)")
     parser.add_argument("--load-in-8bit", action="store_true",
                        help="Use 8-bit quantization (saves memory)")
     parser.add_argument("--test-setup", action="store_true",
