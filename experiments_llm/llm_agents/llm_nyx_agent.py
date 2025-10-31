@@ -91,6 +91,11 @@ class LLMNYXAgent:
         """
         context = context or {}
 
+        # Add randomization to prevent Ollama caching
+        import random
+        import time
+        cache_buster = f"[Interaction #{random.randint(1000, 9999)}, t={time.time():.3f}]"
+
         # Base system prompt
         system_prompt = (
             "You are an AI agent in a multi-agent cooperation experiment. "
@@ -102,6 +107,7 @@ class LLMNYXAgent:
         if self.consciousness_bits == 0:
             # Baseline: No consciousness, pure instinct
             user_prompt = (
+                f"{cache_buster}\n"
                 f"Another agent requests cooperation. "
                 f"Your base cooperation tendency is {self.sharing_probability:.0%}. "
                 f"Decision: COOPERATE or DEFECT?"
@@ -111,6 +117,7 @@ class LLMNYXAgent:
             # Single Bit: ROI awareness only
             roi = self.calculate_cooperation_roi()
             user_prompt = (
+                f"{cache_buster}\n"
                 f"Another agent requests cooperation.\n"
                 f"Your cooperation ROI (benefits/interactions) is: {roi:.2f}\n"
                 f"If ROI > 1.0, cooperation has been profitable.\n"
@@ -130,6 +137,7 @@ class LLMNYXAgent:
                 momentum_text = "improving" if momentum > 0 else "declining"
 
             user_prompt = (
+                f"{cache_buster}\n"
                 f"Another agent requests cooperation.\n"
                 f"Your cooperation ROI: {roi:.2f}\n"
                 f"Trend: {momentum_text} ({momentum:+.2f})\n"
@@ -157,6 +165,7 @@ class LLMNYXAgent:
                     prediction_text = "likely to worsen"
 
             user_prompt = (
+                f"{cache_buster}\n"
                 f"Another agent requests cooperation.\n"
                 f"Current ROI: {roi:.2f}\n"
                 f"Recent trend: {momentum:+.2f}\n"
