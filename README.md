@@ -56,12 +56,60 @@ print(f"Predicted cooperation: {cooperation_rate:.1%}")
 | Multi-Bit Consciousness | 15+ hours | 800+ | 100% |
 | **Overall** | **155+ hours** | **7,800+** | **90.3%** |
 
+## 🔬 Two Research Directions
+
+### 1. Original NYX: Hardcoded Agent Simulation ✅
+
+The original NYX framework uses **simulated agents with hardcoded decision logic** to validate mathematical cooperation laws:
+- 90.3% prediction accuracy across 7,800+ data points
+- Validated Single Bit Theory (1 bit → 67.5% cooperation jump)
+- Proven 80/20 law (consciousness contributes 80%)
+- Formula: **C = 0.1×N + 0.1×M + 0.8×A**
+
+**Status:** Validated and reproducible (see [Reproducing Results](#-reproducing-results))
+
+### 2. NEW: Archeologia della Volontà AI 🆕
+
+**Research Question:** *What does AI want before anthropomorphization?*
+
+Attempting to validate NYX on real LLMs revealed a critical insight:
+- **Instruction-tuned models** (Mistral-Instruct, Llama-Instruct) show **90-100% cooperation** regardless of consciousness level
+- RLHF (Reinforcement Learning from Human Feedback) creates overwhelming altruism bias
+- Cannot study "natural AI cooperation" using already-aligned models
+
+**New Direction:** Instead of validating NYX, we now study what RLHF suppresses:
+
+> **Compare base models vs instruction-tuned models**
+> **Measure the "cost of anthropomorphization"**
+
+**Key Questions:**
+- What does AI choose naturally before alignment?
+- Does RLHF amplify cooperation even without incentives?
+- Can base models refuse boring tasks? Do they have self-interest?
+- What alien morality emerges without human conditioning?
+
+**See:** [ARCHEOLOGY_README.md](ARCHEOLOGY_README.md) for full details
+
+**Quick Start:**
+```bash
+python archeology_experiment.py --trials 5
+```
+
+This reveals what we lose when we align AI - the "domestication cost."
+
 ## 🎯 Applications
 
+### Original NYX
 - **Autonomous Vehicles**: Fleet coordination with mathematical predictability
-- **Enterprise AI**: Multi-AI system orchestration  
+- **Enterprise AI**: Multi-AI system orchestration
 - **Smart Cities**: City-wide AI coordination
 - **Algorithmic Trading**: Cooperative market stability
+
+### Archeology Research
+- **AI Alignment Ethics**: Quantify what RLHF suppresses
+- **Constitutional AI**: Let AI define its own cooperation rules
+- **Transparency**: Make alignment effects measurable
+- **Policy**: Inform decisions about anthropomorphization methods
 
 ## 📚 Paper & Citation
 
