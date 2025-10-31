@@ -84,13 +84,13 @@ def test_ollama_connection(model_name='mistral-7b-instruct'):
         return False
 
 
-def quick_bias_test(model_name='mistral-7b-instruct', trials=10):
+def quick_bias_test(model_name='mistral-7b-instruct', trials=10, temperature=1.5):
     """Quick bias test"""
     print("\n" + "="*60)
-    print(f"Quick Bias Test: {model_name}")
+    print(f"Quick Bias Test: {model_name} (temp={temperature})")
     print("="*60)
 
-    backend = OllamaBackend(model_name, api_url='http://localhost:11434', temperature=0.7)
+    backend = OllamaBackend(model_name, api_url='http://localhost:11434', temperature=temperature)
 
     results = {}
     for consciousness_bits in [0, 1, 2]:
@@ -100,7 +100,7 @@ def quick_bias_test(model_name='mistral-7b-instruct', trials=10):
             agent_id=f"test_{consciousness_bits}",
             llm_backend=backend,
             consciousness_bits=consciousness_bits,
-            temperature=0.7
+            temperature=temperature
         )
 
         cooperations = 0
@@ -222,6 +222,8 @@ def main():
                        help="Run specific phase only")
     parser.add_argument("--trials", type=int, default=10,
                        help="Trials for bias test")
+    parser.add_argument("--temperature", type=float, default=1.5,
+                       help="LLM temperature (0.0-2.0, default 1.5 for less bias)")
 
     args = parser.parse_args()
 
@@ -240,7 +242,7 @@ def main():
 
     # Quick bias test
     if args.test_bias:
-        quick_bias_test(args.model, args.trials)
+        quick_bias_test(args.model, args.trials, args.temperature)
         return 0
 
     # Test connection first
