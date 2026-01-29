@@ -1,0 +1,172 @@
+{
+  "paper_reproduction_summary": {
+    "total_tests": 5,
+    "overall_accuracy": 0.19125830171996308,
+    "total_data_points": 4522,
+    "total_duration_hours": 1.3710194163852267e-05,
+    "paper_target_accuracy": 0.903,
+    "accuracy_achieved": "False",
+    "reproduction_timestamp": "2026-01-29T11:15:50.551110"
+  },
+  "individual_tests": {
+    "test_1": {
+      "test_name": "cooperation_gradient",
+      "energy_levels": [
+        2,
+        5,
+        8,
+        12
+      ],
+      "predicted_cooperation": [
+        0.4725000000000001,
+        0.4725000000000001,
+        0.4725000000000001,
+        0.4725000000000001
+      ],
+      "observed_cooperation": [
+        0.0,
+        0.9746543778801844,
+        0.9851485148514851,
+        0.9953703703703703
+      ],
+      "accuracies": [
+        0.0,
+        0.4847872340425533,
+        0.4796231155778896,
+        0.47469767441860466
+      ],
+      "data_points": 1714,
+      "overall_accuracy": 0.3597770060097619,
+      "duration_hours": 5.508528815375434e-06
+    },
+    "test_2": {
+      "test_name": "sharing_sensitivity",
+      "sharing_ratios": [
+        0.0,
+        0.1,
+        0.3,
+        0.5,
+        0.7
+      ],
+      "predicted_cooperation": [
+        0.45250000000000007,
+        0.45250000000000007,
+        0.45250000000000007,
+        0.45250000000000007,
+        0.45250000000000007
+      ],
+      "observed_cooperation": [
+        0.0,
+        0.0,
+        0.0,
+        0.9873417721518988,
+        1.0
+      ],
+      "accuracies": [
+        0.0,
+        0.0,
+        0.0,
+        0.45830128205128207,
+        0.4525000000000001
+      ],
+      "data_points": 744,
+      "single_bit_jump": 0.0,
+      "overall_accuracy": 0.18216025641025643,
+      "duration_hours": 7.42548041873508e-06
+    },
+    "test_3": {
+      "test_name": "memory_persistence",
+      "memory_sizes": [
+        5,
+        10,
+        15
+      ],
+      "predicted_cooperation": [
+        0.4377448997392238,
+        0.45250000000000007,
+        0.4377448997392238
+      ],
+      "observed_cooperation": [
+        0.0,
+        0.9655172413793104,
+        0.9838709677419355
+      ],
+      "accuracies": [
+        0.0,
+        0.4686607142857143,
+        0.4449210456365882
+      ],
+      "data_points": 326,
+      "optimal_memory_size": 15,
+      "optimal_cooperation": 0.9838709677419355,
+      "overall_accuracy": 0.3045272533074342,
+      "duration_hours": 8.36471716562907e-06
+    },
+    "test_4": {
+      "test_name": "minimum_viable_society",
+      "agent_counts": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "predicted_cooperation": [
+        0.4425000000000001,
+        0.4425000000000001,
+        0.45250000000000007,
+        0.4725000000000001
+      ],
+      "observed_cooperation": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accuracies": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "data_points": 1468,
+      "minimum_viable_agents": null,
+      "overall_accuracy": 0.0,
+      "duration_hours": 1.146747006310357e-05
+    },
+    "test_5": {
+      "test_name": "multibit_consciousness",
+      "consciousness_bits": [
+        1,
+        2,
+        3
+      ],
+      "predicted_cooperation": [
+        0.3175,
+        0.45250000000000007,
+        0.5200000000000001
+      ],
+      "observed_cooperation": [
+        0.8571428571428571,
+        0.0,
+        0.0
+      ],
+      "accuracies": [
+        0.3704166666666667,
+        0.0,
+        0.0
+      ],
+      "data_points": 270,
+      "optimal_consciousness_bits": 1,
+      "optimal_cooperation": 0.8571428571428571,
+      "diminishing_returns_validated": false,
+      "overall_accuracy": 0.12347222222222225,
+      "duration_hours": 1.369476318359375e-05
+    }
+  },
+  "key_discoveries_validated": {
+    "single_bit_theory": false,
+    "minimum_viable_society": false,
+    "optimal_consciousness_bits": false,
+    "memory_sweet_spot": false
+  }
+}

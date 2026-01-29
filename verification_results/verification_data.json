@@ -1,0 +1,463 @@
+{
+  "verification_date": "2026-01-29T11:17:08.904691",
+  "n_runs_per_test": 10,
+  "tests": {
+    "formula_consistency": {
+      "description": "Testing if formula produces consistent predictions",
+      "predictions": [
+        {
+          "agent_count": 4,
+          "predicted": 0.45250000000000007
+        },
+        {
+          "agent_count": 6,
+          "predicted": 0.4725000000000001
+        },
+        {
+          "agent_count": 8,
+          "predicted": 0.4925000000000001
+        },
+        {
+          "agent_count": 10,
+          "predicted": 0.5125000000000001
+        }
+      ]
+    },
+    "simulation_variability": {
+      "description": "Testing variance in simulation results across multiple runs",
+      "runs": [
+        {
+          "run": 1,
+          "cooperation_rate": 0.989010989010989
+        },
+        {
+          "run": 2,
+          "cooperation_rate": 0.0
+        },
+        {
+          "run": 3,
+          "cooperation_rate": 0.0
+        },
+        {
+          "run": 4,
+          "cooperation_rate": 0.0
+        },
+        {
+          "run": 5,
+          "cooperation_rate": 0.989247311827957
+        },
+        {
+          "run": 6,
+          "cooperation_rate": 1.0
+        },
+        {
+          "run": 7,
+          "cooperation_rate": 1.0
+        },
+        {
+          "run": 8,
+          "cooperation_rate": 0.0
+        },
+        {
+          "run": 9,
+          "cooperation_rate": 0.0
+        },
+        {
+          "run": 10,
+          "cooperation_rate": 0.0
+        }
+      ],
+      "mean": 0.3978258300838946,
+      "std": 0.4872472749563548,
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0
+    },
+    "prediction_correlation": {
+      "description": "Testing correlation between predicted and observed values",
+      "data_points": [
+        {
+          "agent_count": 3,
+          "predicted": 0.4425000000000001,
+          "observed": 0.0,
+          "error": 0.4425000000000001
+        },
+        {
+          "agent_count": 3,
+          "predicted": 0.4425000000000001,
+          "observed": 1.0,
+          "error": 0.5574999999999999
+        },
+        {
+          "agent_count": 3,
+          "predicted": 0.4425000000000001,
+          "observed": 0.9767441860465116,
+          "error": 0.5342441860465115
+        },
+        {
+          "agent_count": 3,
+          "predicted": 0.4425000000000001,
+          "observed": 0.0,
+          "error": 0.4425000000000001
+        },
+        {
+          "agent_count": 3,
+          "predicted": 0.4425000000000001,
+          "observed": 0.0,
+          "error": 0.4425000000000001
+        },
+        {
+          "agent_count": 3,
+          "predicted": 0.4425000000000001,
+          "observed": 1.0,
+          "error": 0.5574999999999999
+        },
+        {
+          "agent_count": 3,
+          "predicted": 0.4425000000000001,
+          "observed": 0.0,
+          "error": 0.4425000000000001
+        },
+        {
+          "agent_count": 3,
+          "predicted": 0.4425000000000001,
+          "observed": 0.975,
+          "error": 0.5324999999999999
+        },
+        {
+          "agent_count": 3,
+          "predicted": 0.4425000000000001,
+          "observed": 0.0,
+          "error": 0.4425000000000001
+        },
+        {
+          "agent_count": 3,
+          "predicted": 0.4425000000000001,
+          "observed": 0.0,
+          "error": 0.4425000000000001
+        },
+        {
+          "agent_count": 4,
+          "predicted": 0.45250000000000007,
+          "observed": 0.9777777777777777,
+          "error": 0.5252777777777777
+        },
+        {
+          "agent_count": 4,
+          "predicted": 0.45250000000000007,
+          "observed": 0.9627659574468085,
+          "error": 0.5102659574468085
+        },
+        {
+          "agent_count": 4,
+          "predicted": 0.45250000000000007,
+          "observed": 0.0,
+          "error": 0.45250000000000007
+        },
+        {
+          "agent_count": 4,
+          "predicted": 0.45250000000000007,
+          "observed": 1.0,
+          "error": 0.5474999999999999
+        },
+        {
+          "agent_count": 4,
+          "predicted": 0.45250000000000007,
+          "observed": 0.0,
+          "error": 0.45250000000000007
+        },
+        {
+          "agent_count": 4,
+          "predicted": 0.45250000000000007,
+          "observed": 0.0,
+          "error": 0.45250000000000007
+        },
+        {
+          "agent_count": 4,
+          "predicted": 0.45250000000000007,
+          "observed": 0.975609756097561,
+          "error": 0.5231097560975608
+        },
+        {
+          "agent_count": 4,
+          "predicted": 0.45250000000000007,
+          "observed": 0.987012987012987,
+          "error": 0.534512987012987
+        },
+        {
+          "agent_count": 4,
+          "predicted": 0.45250000000000007,
+          "observed": 0.0,
+          "error": 0.45250000000000007
+        },
+        {
+          "agent_count": 4,
+          "predicted": 0.45250000000000007,
+          "observed": 0.0,
+          "error": 0.45250000000000007
+        },
+        {
+          "agent_count": 5,
+          "predicted": 0.4625000000000001,
+          "observed": 0.0,
+          "error": 0.4625000000000001
+        },
+        {
+          "agent_count": 5,
+          "predicted": 0.4625000000000001,
+          "observed": 0.0,
+          "error": 0.4625000000000001
+        },
+        {
+          "agent_count": 5,
+          "predicted": 0.4625000000000001,
+          "observed": 0.0,
+          "error": 0.4625000000000001
+        },
+        {
+          "agent_count": 5,
+          "predicted": 0.4625000000000001,
+          "observed": 0.0,
+          "error": 0.4625000000000001
+        },
+        {
+          "agent_count": 5,
+          "predicted": 0.4625000000000001,
+          "observed": 0.9934640522875817,
+          "error": 0.5309640522875816
+        },
+        {
+          "agent_count": 5,
+          "predicted": 0.4625000000000001,
+          "observed": 0.9873417721518988,
+          "error": 0.5248417721518988
+        },
+        {
+          "agent_count": 5,
+          "predicted": 0.4625000000000001,
+          "observed": 0.9877300613496932,
+          "error": 0.5252300613496932
+        },
+        {
+          "agent_count": 5,
+          "predicted": 0.4625000000000001,
+          "observed": 0.0,
+          "error": 0.4625000000000001
+        },
+        {
+          "agent_count": 5,
+          "predicted": 0.4625000000000001,
+          "observed": 1.0,
+          "error": 0.5374999999999999
+        },
+        {
+          "agent_count": 5,
+          "predicted": 0.4625000000000001,
+          "observed": 0.9727891156462585,
+          "error": 0.5102891156462583
+        },
+        {
+          "agent_count": 6,
+          "predicted": 0.4725000000000001,
+          "observed": 0.9957627118644068,
+          "error": 0.5232627118644066
+        },
+        {
+          "agent_count": 6,
+          "predicted": 0.4725000000000001,
+          "observed": 1.0,
+          "error": 0.5274999999999999
+        },
+        {
+          "agent_count": 6,
+          "predicted": 0.4725000000000001,
+          "observed": 1.0,
+          "error": 0.5274999999999999
+        },
+        {
+          "agent_count": 6,
+          "predicted": 0.4725000000000001,
+          "observed": 0.9906976744186047,
+          "error": 0.5181976744186045
+        },
+        {
+          "agent_count": 6,
+          "predicted": 0.4725000000000001,
+          "observed": 0.0,
+          "error": 0.4725000000000001
+        },
+        {
+          "agent_count": 6,
+          "predicted": 0.4725000000000001,
+          "observed": 0.0,
+          "error": 0.4725000000000001
+        },
+        {
+          "agent_count": 6,
+          "predicted": 0.4725000000000001,
+          "observed": 1.0,
+          "error": 0.5274999999999999
+        },
+        {
+          "agent_count": 6,
+          "predicted": 0.4725000000000001,
+          "observed": 0.0,
+          "error": 0.4725000000000001
+        },
+        {
+          "agent_count": 6,
+          "predicted": 0.4725000000000001,
+          "observed": 1.0,
+          "error": 0.5274999999999999
+        },
+        {
+          "agent_count": 6,
+          "predicted": 0.4725000000000001,
+          "observed": 1.0,
+          "error": 0.5274999999999999
+        },
+        {
+          "agent_count": 8,
+          "predicted": 0.4925000000000001,
+          "observed": 0.0,
+          "error": 0.4925000000000001
+        },
+        {
+          "agent_count": 8,
+          "predicted": 0.4925000000000001,
+          "observed": 0.9771084337349397,
+          "error": 0.4846084337349396
+        },
+        {
+          "agent_count": 8,
+          "predicted": 0.4925000000000001,
+          "observed": 1.0,
+          "error": 0.5074999999999998
+        },
+        {
+          "agent_count": 8,
+          "predicted": 0.4925000000000001,
+          "observed": 1.0,
+          "error": 0.5074999999999998
+        },
+        {
+          "agent_count": 8,
+          "predicted": 0.4925000000000001,
+          "observed": 0.995085995085995,
+          "error": 0.502585995085995
+        },
+        {
+          "agent_count": 8,
+          "predicted": 0.4925000000000001,
+          "observed": 0.9608355091383812,
+          "error": 0.4683355091383811
+        },
+        {
+          "agent_count": 8,
+          "predicted": 0.4925000000000001,
+          "observed": 0.9433734939759036,
+          "error": 0.45087349397590354
+        },
+        {
+          "agent_count": 8,
+          "predicted": 0.4925000000000001,
+          "observed": 1.0,
+          "error": 0.5074999999999998
+        },
+        {
+          "agent_count": 8,
+          "predicted": 0.4925000000000001,
+          "observed": 0.9932432432432432,
+          "error": 0.500743243243243
+        },
+        {
+          "agent_count": 8,
+          "predicted": 0.4925000000000001,
+          "observed": 1.0,
+          "error": 0.5074999999999998
+        }
+      ],
+      "correlation": 0.35660900535644446,
+      "mean_absolute_error": 0.494146854545571,
+      "rmse": 0.49545228358436827
+    },
+    "accuracy_methodology": {
+      "description": "Analyzing the accuracy calculation methodology",
+      "findings": [
+        {
+          "predicted": 0.45,
+          "observed": 0.0,
+          "calculated_accuracy": 0.0,
+          "absolute_error": 0.45
+        },
+        {
+          "predicted": 0.45,
+          "observed": 0.95,
+          "calculated_accuracy": 0.4736842105263158,
+          "absolute_error": 0.49999999999999994
+        },
+        {
+          "predicted": 0.45,
+          "observed": 0.45,
+          "calculated_accuracy": 1.0,
+          "absolute_error": 0.0
+        },
+        {
+          "predicted": 0.45,
+          "observed": 1.0,
+          "calculated_accuracy": 0.44999999999999996,
+          "absolute_error": 0.55
+        }
+      ]
+    },
+    "80_20_law": {
+      "description": "Testing if 80% of cooperation depends on consciousness",
+      "formula_breakdown": [
+        {
+          "agent_count": 4,
+          "consciousness_contribution": 0.4050000000000001,
+          "infrastructure_contribution": 0.04750000000000001,
+          "total": 0.45250000000000007,
+          "consciousness_percentage": 89.50276243093923,
+          "infrastructure_percentage": 10.497237569060774
+        },
+        {
+          "agent_count": 6,
+          "consciousness_contribution": 0.4050000000000001,
+          "infrastructure_contribution": 0.0675,
+          "total": 0.4725000000000001,
+          "consciousness_percentage": 85.71428571428572,
+          "infrastructure_percentage": 14.285714285714285
+        },
+        {
+          "agent_count": 8,
+          "consciousness_contribution": 0.4050000000000001,
+          "infrastructure_contribution": 0.08750000000000001,
+          "total": 0.4925000000000001,
+          "consciousness_percentage": 82.23350253807106,
+          "infrastructure_percentage": 17.76649746192893
+        },
+        {
+          "agent_count": 10,
+          "consciousness_contribution": 0.4050000000000001,
+          "infrastructure_contribution": 0.1075,
+          "total": 0.5125000000000001,
+          "consciousness_percentage": 79.02439024390245,
+          "infrastructure_percentage": 20.97560975609756
+        }
+      ]
+    }
+  },
+  "summary": {
+    "claimed_accuracy": 0.903,
+    "achieved_accuracy": 0.2850598458142556,
+    "accuracy_gap": 0.6179401541857444,
+    "high_variance_detected": "True",
+    "poor_correlation": "True",
+    "issues_found": [
+      "Low accuracy: 28.5% vs claimed 90.3%",
+      "High variance in results: std=0.487",
+      "Poor prediction-observation correlation: 0.357"
+    ]
+  }
+}
